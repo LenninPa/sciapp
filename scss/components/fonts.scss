@@ -1,0 +1,13 @@
+@use 'colors' as *;
+
+@mixin titles{
+	font-family:  Lato, Arial;
+	font-size: 1.6em;
+	color: $white;
+}
+
+@mixin text{
+	font-family:  Plus Jakarta Sans, Arial;
+	font-size: 1em;
+	color: $black;
+}

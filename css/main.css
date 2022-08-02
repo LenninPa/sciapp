@@ -1,0 +1,251 @@
+*, ul, li, a {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/bglogin.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/** ERROR**/
+.error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75vh;
+  height: 15%;
+  background: red;
+  color: white;
+  font-family: Plus Jakarta Sans, Arial;
+  font-size: 1em;
+  color: black;
+  color: white;
+  padding: 3em;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 5em auto;
+  -webkit-animation: aparecer 3s alternate;
+          animation: aparecer 3s alternate;
+}
+.error .error_link {
+  text-transform: uppercase;
+  color: white;
+}
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.top_bar {
+  position: relative;
+  width: 100%;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background: #484674;
+}
+.top_bar .top_bar_title {
+  font-family: Lato, Arial;
+  font-size: 1.6em;
+  color: white;
+}
+
+.form {
+  width: 100%;
+  height: 470px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+}
+.form .main_form {
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  width: 45vh;
+  height: 53vh;
+  padding: 1em;
+  background: #484674;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.form .main_form .main_form_inputs {
+  width: 75%;
+  padding: 0.5em;
+  margin: auto 0;
+  border: 0;
+  outline: 0;
+  margin: 0.5em 0;
+  font-family: Plus Jakarta Sans, Arial;
+  font-size: 1em;
+  color: black;
+  text-align: center;
+  color: white;
+  border-radius: 0.5em;
+}
+.form .main_form .main_form_inputs:first-child {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0.5em;
+  font-family: Lato, Arial;
+  font-size: 1.6em;
+  color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 1.3em;
+}
+.form .main_form .main_form_inputs:nth-child(3) {
+  margin: 0;
+  color: black;
+}
+.form .main_form .main_form_inputs:nth-child(5) {
+  margin: 0;
+  color: black;
+}
+.form .main_form .main_form_inputs:last-child {
+  width: 50%;
+  color: black;
+  margin: 1em 0;
+}
+
+.footer {
+  background: #484674;
+  width: 100%;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  padding: 0.5em 0;
+}
+.footer .footer_title {
+  font-family: Lato, Arial;
+  font-size: 1.6em;
+  color: white;
+  font-size: 1.5em;
+}
+.footer .credits {
+  font-family: Plus Jakarta Sans, Arial;
+  font-size: 1em;
+  color: black;
+  width: 50%;
+  color: white;
+}
+
+.user_bar_state {
+  background: #484674;
+  width: 100%;
+  padding: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  overflow: hidden;
+  border-top: 2px dotted white;
+  border-bottom-right-radius: 1em;
+}
+.user_bar_state .user_bar_state_Desc {
+  font-family: Lato, Arial;
+  font-size: 1.6em;
+  color: white;
+  font-size: 1em;
+}
+.user_bar_state .user_bar_state_bttn_logout {
+  font-family: Plus Jakarta Sans, Arial;
+  font-size: 1em;
+  color: black;
+  font-size: 1em;
+  width: 20vh;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: yellow;
+  padding: 0.2em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.user_bar_state .user_bar_state_bttn_logout:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: lightgreen;
+}
